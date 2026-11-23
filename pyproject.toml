@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atr-conformance"
+version = "0.1.0"
+description = "Stdlib-only validator and scorer for ATR rule files and labelled observation streams"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+atr-conformance = "atr_conformance.cli:main"
+
+[tool.setuptools]
+packages = ["atr_conformance"]
